@@ -3,10 +3,10 @@ class Solution {
     ListNode prev=null;
     ListNode curr=head;
     while(curr!=null){
-        ListNode  temp=curr.next;    
-        curr.next=prev;              
-         prev = curr;               
-        curr=temp;                   
+        ListNode  temp=curr.next;    //step1
+        curr.next=prev;              //step2
+         prev = curr;                //step3
+        curr=temp;                   //step4
     }
     return prev;
     }
